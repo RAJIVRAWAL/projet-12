@@ -44,18 +44,20 @@ var select_sprites = Math.round(random(1,2));
  
 if (frameCount % 80 == 0){
    if (select_sprites == 1){
+     function createapple(){
     apple = createSprite(random(50,350),40,10,10);
     apple.addImage(appleImg);
     apple.scale = 0.5;
     apple.velocityY = -3
-
+     }
     }
    else{
+     function createleaf(){
     leaf = createSprite(random(50,350),40,10,10);
     leaf.addImage(leafImg);
     leaf.scale = 0.5;
     leaf.velocityY = -3
-
+     }
     }
    }
 
